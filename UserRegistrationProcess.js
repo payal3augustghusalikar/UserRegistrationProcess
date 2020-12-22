@@ -1,1 +1,0 @@
-console.log(`\n ******** Welcome to user Registration Process ********** \n`);
