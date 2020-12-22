@@ -4,7 +4,7 @@
  */
 const NAME_PATTERN = new RegExp("^[A-Z]{1}[a-z]{2,}$");
 const EMAIL_PATTERN = new RegExp("^([a-z]{3,})([.]{0,1}[a-z]*)@([a-z]{2}).([a-z]{2})([.]{1}[a-z]{2}){0,1}$");
-
+const MOBILE_NO_PATTERN = new RegExp("^([0-9]{2})[ ]([1-9]{1}[0-9]{9})$");
 /**
  * @description Class UserValidationProcess
  */
@@ -34,10 +34,17 @@ class UserValidationProcess {
     }
 
     emailValidator(email) {
-        if (NAME_PATTERN.test(email))
+        if (EMAIL_PATTERN.test(email))
             console.log("valid email \n");
         else
             console.log("Invalid email \n");
+    }
+
+    mobileNoValidator(mobileNo) {
+        if (MOBILE_NO_PATTERN.test(mobileNo))
+            console.log("valid mobile No \n");
+        else
+            console.log("Invalid mobile No \n");
     }
 }
 module.exports = new UserValidationProcess();

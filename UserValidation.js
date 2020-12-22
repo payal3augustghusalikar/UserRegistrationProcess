@@ -22,10 +22,15 @@ class UserValidation {
         validationProcess.emailValidator(email);
     }
 
+    validateUserInputMobileNo = () => {
+        var mobileNo = prompt(`Enter your mobile number : `,  mobileNo);
+        validationProcess.mobileNoValidator(mobileNo);
+    }
+   
     validation = () => {
         console.log(`\n ****** welcome to user registration Process \n`);
 
-        var choice = prompt(`1. First Name   2. Last Name   3. Email   Enter your choice: `, choice);
+        var choice = prompt(`1. First Name   2. Last Name   3. Email  4. Mobile No.  Enter your choice: `, choice);
         switch (choice) {
             case "1":
                 object.validateUserInputFirstName();
@@ -35,6 +40,9 @@ class UserValidation {
                 break;
             case "3":
                 object.validateUserInputEmail();
+                break;
+            case "4":
+                object.validateUserInputMobileNo();
                 break;
             default:
                 console.log("Please Enter right choice");
