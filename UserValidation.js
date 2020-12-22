@@ -17,22 +17,28 @@ class UserValidation {
         validationProcess.lastNameValidator(lastName);
     }
 
+    validateUserInputEmail = () => {
+        var email = prompt(`Enter your Email : `, email);
+        validationProcess.emailValidator(email);
+    }
+
     validation = () => {
         console.log(`\n ****** welcome to user registration Process \n`);
 
-        while (true) {
-            var choice = prompt(`1. First Name  2. Last Name Enter your choice: `, choice);
-            switch (choice) {
-                case "1":
-                    object.validateUserInputFirstName();
-                    break;
-                case "2":
-                    object.validateUserInputLastName();
-                    break;
-                default:
-                    console.log("Please Enter right choice");
-                    break;
-            }
+        var choice = prompt(`1. First Name   2. Last Name   3. Email   Enter your choice: `, choice);
+        switch (choice) {
+            case "1":
+                object.validateUserInputFirstName();
+                break;
+            case "2":
+                object.validateUserInputLastName();
+                break;
+            case "3":
+                object.validateUserInputEmail();
+                break;
+            default:
+                console.log("Please Enter right choice");
+                break;
         }
     }
 }
