@@ -23,14 +23,19 @@ class UserValidation {
     }
 
     validateUserInputMobileNo = () => {
-        var mobileNo = prompt(`Enter your mobile number : `,  mobileNo);
+        var mobileNo = prompt(`Enter your mobile number : `, mobileNo);
         validationProcess.mobileNoValidator(mobileNo);
     }
-   
+
+    validateUserInputPassword = () => {
+        var password = prompt(`Enter your password : `, password);
+        validationProcess.passwordValidator(password);
+    }
+
     validation = () => {
         console.log(`\n ****** welcome to user registration Process \n`);
 
-        var choice = prompt(`1. First Name   2. Last Name   3. Email  4. Mobile No.  Enter your choice: `, choice);
+        var choice = prompt(`1. First Name   2. Last Name   3. Email  4. Mobile No.  5. Password  Enter your choice: `, choice);
         switch (choice) {
             case "1":
                 object.validateUserInputFirstName();
@@ -43,6 +48,9 @@ class UserValidation {
                 break;
             case "4":
                 object.validateUserInputMobileNo();
+                break;
+            case "5":
+                object.validateUserInputPassword();
                 break;
             default:
                 console.log("Please Enter right choice");
