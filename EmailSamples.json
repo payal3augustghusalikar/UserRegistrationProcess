@@ -1,0 +1,72 @@
+{
+    "validEmailSamples": [
+        {
+            "Email": "abc@yahoo.com"
+        },
+        {
+            "Email": "abc-100@yahoo.com"
+        },
+        {
+            "Email": "abc.100@yahoo.com"
+        },
+        {
+            "Email": "abc111@abc.com"
+        },
+        {
+            "Email": "abc-100@abc.net"
+        },
+        {
+            "Email": "abc.100@abc.com.au"
+        },
+        {
+            "Email": "abc@1.com"
+        },
+        {
+            "Email": "abc@gmail.com.com"
+        },
+        {
+            "Email": "abc+100@gmail.com"
+        }
+    ],
+    "invalidEmailSamples": [
+        {
+            "Email": "abc"
+        },
+        {
+            "Email": "abc@.com.my"
+        },
+        {
+            "Email": "abc123@gmail.a"
+        },
+        {
+            "Email": "abc123@.com"
+        },
+        {
+            "Email": "abc123@.com.com"
+        },
+        {
+            "Email": ".abc@abc.com"
+        },
+        {
+            "Email": "abc()*@gmail.com"
+        },
+        {
+            "Email": "abc@%*.com"
+        },
+        {
+            "Email": "abc..2002@gmail.com"
+        },
+        {
+            "Email": "abc.@gmail.com"
+        },
+        {
+            "Email": "abc.@abc@gmail.com"
+        },
+        {
+            "Email": "abc@gmail.com.1a"
+        },
+        {
+            "Email": "abc@gmail.com.aa.au"
+        }
+    ]
+}
