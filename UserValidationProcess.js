@@ -5,7 +5,7 @@
 const NAME_PATTERN = new RegExp("^[A-Z]{1}[a-z]{2,}$");
 const EMAIL_PATTERN = new RegExp("^([a-z]{3,})([.]{0,1}[a-z]*)@([a-z]{2}).([a-z]{2})([.]{1}[a-z]{2}){0,1}$");
 const MOBILE_NO_PATTERN = new RegExp("^([0-9]{2})[ ]([1-9]{1}[0-9]{9})$");
-const PASSWORD_PATTERN = new RegExp("^(.*[A-Z]{1,}.*[0-9]{1,}.*[~!@#$%^&*]?[A-Za-z0-9]{5,})$");
+const PASSWORD_PATTERN = new RegExp("^((.*[A-Z]{1,})(.*[0-9]{1,})(.*[\\~\\!\\@\\#\\$\\%\\^\\&\\*])(.*[A-Za-z0-9]{5,}))$");
 
 /**
  * @description Class UserValidationProcess

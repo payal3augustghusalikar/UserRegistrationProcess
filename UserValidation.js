@@ -33,7 +33,7 @@ class UserValidation {
     }
 
     validation = () => {
-        console.log(`\n ****** welcome to user registration Process \n`);
+        console.log(`\n ****** welcome to user registration Process ********\n`);
 
         var choice = prompt(`1. First Name   2. Last Name   3. Email  4. Mobile No.  5. Password  Enter your choice: `, choice);
         switch (choice) {
